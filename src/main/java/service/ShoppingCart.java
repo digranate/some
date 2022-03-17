@@ -20,7 +20,7 @@ public class ShoppingCart {
     public double getTotalPriceWithDiscount(){
         double totalPriceWithDiscount = 0;
         for (Food food: foodArray){
-            totalPriceWithDiscount += food.getAmount()*food.getPrice()*food.getDiscount();
+            totalPriceWithDiscount += food.getAmount()*food.getPrice()*(1-food.getDiscount()/100);
         }
         return totalPriceWithDiscount;
     }
