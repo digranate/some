@@ -13,6 +13,6 @@ public class Apple extends Food {
     }
 
     public double getDiscount() {
-        return 1;
+        return 0;
     }
 }
